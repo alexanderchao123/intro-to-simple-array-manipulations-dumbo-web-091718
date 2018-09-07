@@ -11,5 +11,8 @@ def using_pop(array)
 end
 
 def pop_with_args(array)
-  2.times {array.pop()}
+  removed = []
+  2.times {removed << array.pop()}
 end
+
+
