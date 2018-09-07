@@ -26,3 +26,12 @@ end
 def using_concat(array_1, array_2)
   array_1.concat(array2)
 end
+
+def shift_with_args(array)
+  removed = []
+  2.times do
+    first_item = array.shift()
+    removed.push(first_item)
+  end
+  return removed
+end
