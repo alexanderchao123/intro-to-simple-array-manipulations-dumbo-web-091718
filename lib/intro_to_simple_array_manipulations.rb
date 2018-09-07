@@ -12,6 +12,9 @@ end
 
 def pop_with_args(array)
   removed = []
-  2.times { removed << array.pop() }
+  2.times do
+    last_ele = array.pop()
+    removed.unshift(last_ele)
+  end
   return removed
 end
